@@ -1,0 +1,2337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EFrame</class>
+ <widget class="QEFrame" name="EFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>316</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EFrame</string>
+  </property>
+  <property name="userLevelEnabled" stdset="0">
+   <enum>QEFrame::Scientist</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>3</number>
+   </property>
+   <item row="2" column="0">
+    <widget class="QEGroupBox" name="qegroupbox_2">
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="title" stdset="0">
+      <string>MOTREC basics</string>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QEGroupBox::Scientist</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="6" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_20">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).SREV</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="confirmWrite">
+         <bool>true</bool>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="precision">
+         <number>9</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QECheckBox" name="cB_SETOFFSET_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>8</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans Mono</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Check to set the offset to match current readback to desired setpoint </string>
+        </property>
+        <property name="text">
+         <string>PMOD</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).PMOD</string>
+        </property>
+        <property name="userLevelVisibility" stdset="0">
+         <enum>QECheckBox::User</enum>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QECheckBox::Engineer</enum>
+        </property>
+        <property name="localEnumeration">
+         <string/>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_18">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).MRES</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="confirmWrite">
+         <bool>true</bool>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="precision">
+         <number>9</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Eng. units </string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>Motor units per rev</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>EGU per rev</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_27">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>EGU per motor units</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_25">
+        <property name="toolTip">
+         <string>This is a float64Motor field: Set to 1 to make the motor record drop pending moves. Default is 0</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>Drop Pending moves</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_22">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).UREV</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="confirmWrite">
+         <bool>true</bool>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="precision">
+         <number>9</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_32">
+        <property name="toolTip">
+         <string>float64Motor field: Axis Minimal Incremnental Motion. Set to the minimum repeatable motion increment. Has to be L.T. 1e-9 EGU</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>Minimal Motion</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_19">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).AMIM</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="precision">
+         <number>9</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_15">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).EGU</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>Velocity Limit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_32">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).VMAX</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="confirmWrite">
+         <bool>true</bool>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QEGroupBox" name="qegroupbox">
+     <property name="title" stdset="0">
+      <string/>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QEGroupBox::Scientist</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="3">
+       <widget class="QELineEdit" name="qcalineeditplugin_23">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).DESC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Precision</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QELineEdit" name="qcalineeditplugin_16">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).PREC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_44">
+        <property name="text">
+         <string>Time to velocity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" colspan="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_33">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).ACCL</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="confirmWrite">
+         <bool>true</bool>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="1" column="1">
+       <widget class="QEBitStatus" name="qebitstatus_34">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>0</number>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>220</red>
+          <green>255</green>
+          <blue>220</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):FAULT</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QELabel" name="qelabel">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).DESC</string>
+        </property>
+        <property name="displayAlarmStateOption" stdset="0">
+         <enum>QELabel::Never</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_46">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Motor Record Setup</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QEGroupBox" name="qegroupbox_5">
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="title" stdset="0">
+      <string>MOTREC Retry</string>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QEGroupBox::Scientist</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_47">
+        <property name="text">
+         <string>Ref. resolution [EGU/RefU]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_36">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).RRES</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="precision">
+         <number>9</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QECheckBox" name="cB_SETOFFSET_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>8</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans Mono</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Check to set the offset to match current readback to desired setpoint </string>
+        </property>
+        <property name="text">
+         <string>URIP</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).URIP</string>
+        </property>
+        <property name="clickText">
+         <string>No</string>
+        </property>
+        <property name="clickCheckedText">
+         <string>Yes</string>
+        </property>
+        <property name="subscribe">
+         <bool>true</bool>
+        </property>
+        <property name="userLevelVisibility" stdset="0">
+         <enum>QECheckBox::User</enum>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QECheckBox::Engineer</enum>
+        </property>
+        <property name="localEnumeration">
+         <string/>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_31">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="toolTip">
+         <string>Shall not be set less than AMIM</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).RDBD</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_45">
+        <property name="text">
+         <string>Retry deadband</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QEComboBox" name="qecombobox">
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).RMOD</string>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEComboBox::Engineer</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_29">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="toolTip">
+         <string>Retry counts. 0 diables retry </string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).RTRY</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_42">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_48">
+        <property name="text">
+         <string>Retry Mode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>Retry attempts</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_51">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Use reference readback for motor record</string>
+        </property>
+        <property name="text">
+         <string>Use Ref. readback</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QEGroupBox" name="qegroupbox_4">
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="title" stdset="0">
+      <string>MOTREC Backlash</string>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QEGroupBox::Scientist</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Backlash distance (0 disables)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_11">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).BACC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Backlash accel (BACC)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_8">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).BDST</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_50">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string>Move fraction (FRAC)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QELineEdit" name="qcalineeditplugin_25">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>118</red>
+              <green>118</green>
+              <blue>117</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).FRAC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEGenericEdit::Engineer</enum>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QECheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>QECheckBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QEGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>QEGroupBox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

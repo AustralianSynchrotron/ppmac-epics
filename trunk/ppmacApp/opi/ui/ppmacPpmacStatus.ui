@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EFrame</class>
+ <widget class="QEFrame" name="EFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>246</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EFrame</string>
+  </property>
+  <property name="variableAsToolTip">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_46">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>PPMAC Direct and Extras</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QEBitStatus" name="qebitstatus_34">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>0</number>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>220</red>
+          <green>255</green>
+          <blue>220</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):FAULT</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QELabel" name="qelabel_2">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).DESC</string>
+        </property>
+        <property name="displayAlarmStateOption" stdset="0">
+         <enum>QELabel::Never</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QELabel" name="qelabel_8">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>224</red>
+              <green>220</green>
+              <blue>218</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="indent">
+         <number>6</number>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR).OUT</string>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEBitStatus" name="qebitstatus_35">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="numberOfBits">
+      <number>1</number>
+     </property>
+     <property name="shift">
+      <number>0</number>
+     </property>
+     <property name="onColour">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="offColour">
+      <color>
+       <red>220</red>
+       <green>255</green>
+       <blue>220</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(MOTOR):FAULT</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox">
+     <property name="title" stdset="0">
+      <string>Positions (fast update)</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_68">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Status 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="2">
+       <widget class="QELabel" name="qelabel_34">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):POSITION</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>6</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLabel" name="label_81">
+        <property name="text">
+         <string>HEX</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_66">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Status 3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_44">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Ref. readback</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_67">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Status 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" colspan="2">
+       <widget class="QELabel" name="qelabel_46">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):RefPos</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>6</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_65">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Following Err</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QELabel" name="qelabel_37">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):status2</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Default</enum>
+        </property>
+        <property name="radix">
+         <number>16</number>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QELabel" name="qelabel_33">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):status1</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::UnsignedInteger</enum>
+        </property>
+        <property name="radix">
+         <number>16</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="2">
+       <widget class="QELabel" name="qelabel_35">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):FOLL_ERROR</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>6</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLabel" name="label_82">
+        <property name="text">
+         <string>HEX</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_54">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Position</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QLabel" name="label_84">
+        <property name="text">
+         <string>HEX</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QELabel" name="qelabel_38">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):status3</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Default</enum>
+        </property>
+        <property name="radix">
+         <number>16</number>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_79">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Encoder Status</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QELabel" name="qelabel_39">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):MainEncStatus</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>3</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::UnsignedInteger</enum>
+        </property>
+        <property name="radix">
+         <number>16</number>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Automatic</enum>
+        </property>
+        <property name="leadingZero" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QLabel" name="label_80">
+        <property name="text">
+         <string>HEX</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox_5">
+     <property name="title" stdset="0">
+      <string>Configuration (slow update)</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="1" column="1" colspan="2">
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QEBitStatus" name="qebitstatus_32">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="numberOfBits">
+            <number>1</number>
+           </property>
+           <property name="shift">
+            <number>0</number>
+           </property>
+           <property name="onColour">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColour">
+            <color>
+             <red>220</red>
+             <green>255</green>
+             <blue>223</blue>
+            </color>
+           </property>
+           <property name="variable" stdset="0">
+            <string>$(MOTOR):MinusLimit.RVAL</string>
+           </property>
+           <property name="variableSubstitutions" stdset="0">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_61">
+           <property name="text">
+            <string>&lt;-</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_64">
+           <property name="text">
+            <string>+&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QEBitStatus" name="qebitstatus_27">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="numberOfBits">
+            <number>1</number>
+           </property>
+           <property name="shift">
+            <number>0</number>
+           </property>
+           <property name="onColour">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColour">
+            <color>
+             <red>220</red>
+             <green>255</green>
+             <blue>223</blue>
+            </color>
+           </property>
+           <property name="variable" stdset="0">
+            <string>$(MOTOR):PlusLimit.RVAL</string>
+           </property>
+           <property name="variableSubstitutions" stdset="0">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_52">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>MinPos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QEBitStatus" name="qebitstatus_31">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="numberOfBits">
+            <number>1</number>
+           </property>
+           <property name="shift">
+            <number>0</number>
+           </property>
+           <property name="onColour">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColour">
+            <color>
+             <red>220</red>
+             <green>255</green>
+             <blue>223</blue>
+            </color>
+           </property>
+           <property name="variable" stdset="0">
+            <string>$(MOTOR):SoftMinusLimit</string>
+           </property>
+           <property name="variableSubstitutions" stdset="0">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_72">
+           <property name="text">
+            <string>&lt;-</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_74">
+           <property name="text">
+            <string>+&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QEBitStatus" name="qebitstatus_33">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="numberOfBits">
+            <number>1</number>
+           </property>
+           <property name="shift">
+            <number>0</number>
+           </property>
+           <property name="onColour">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColour">
+            <color>
+             <red>220</red>
+             <green>255</green>
+             <blue>223</blue>
+            </color>
+           </property>
+           <property name="variable" stdset="0">
+            <string>$(MOTOR):SoftPlusLimit</string>
+           </property>
+           <property name="variableSubstitutions" stdset="0">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_63">
+        <property name="text">
+         <string>Controller Hard Limits</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_53">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>MaxPos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" colspan="2">
+       <widget class="QELabel" name="qelabel_22">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):MaxPos</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+      </item>
+      <item row="0" column="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QELabel" name="qelabel_21">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):MinPos</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_76">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>HomeOffset</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" colspan="2">
+       <widget class="QELabel" name="qelabel_32">
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):HomeOffset</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_73">
+        <property name="text">
+         <string>Controller Soft Limits</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox_4">
+     <property name="title" stdset="0">
+      <string>Protection</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_85">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>IqMeas</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_83">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Slip error limit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QELabel" name="qelabel_48">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):IqMeas</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_86">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>I2T Sum</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QELabel" name="qelabel_43">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):SlipError</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QELabel" name="qelabel_47">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):SlipErrorLimit</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_62">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Slip error while holding.</string>
+        </property>
+        <property name="text">
+         <string>Slip</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QELabel" name="qelabel_49">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):I2tSum</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QELabel" name="qelabel_50">
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):IdMeas</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_87">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>IdMeas</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox_2">
+     <property name="title" stdset="0">
+      <string>Motor Record push down</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_58">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>JogSpeed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QELabel" name="qelabel_27">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):JogSpeed</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox_3">
+     <property name="title" stdset="0">
+      <string>Configuration (slow update)</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_59">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Mag. Current</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QELabel" name="qelabel_23">
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):magnetisationCurrent</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>3</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_70">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>PhaseMode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QELabel" name="qelabel_31">
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):PhaseMode</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_75">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>PosSf</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QELabel" name="qelabel_29">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):PosSf</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>6</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>false</bool>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_69">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>HomeVel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QELabel" name="qelabel_28">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):HomeVel</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_57">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>MaxSpeed </string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QELabel" name="qelabel_26">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):MaxSpeed</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_56">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>JogTs</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QELabel" name="qelabel_25">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):JogTs</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_71">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>JogTa</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QELabel" name="qelabel_30">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):JogTa</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_77">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Motor Driver.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QELabel" name="qelabel_36">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):AxisAmpType</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="useDbPrecision">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QEGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>QEGroupBox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

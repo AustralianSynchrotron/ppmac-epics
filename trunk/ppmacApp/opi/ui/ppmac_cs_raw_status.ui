@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>accel, Ta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>180</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LimitStop</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>jerk, Ts</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AmpEna</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AltFeedRate</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>70</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):Ta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FeFatal</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_7">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>180</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LimitStop</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>30</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AltFeedRate</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_5">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>50</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FeedRate</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>EncLoss</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_8">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>220</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FeFatal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>50</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Feedrate, %</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_6">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AmpFault</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>110</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):Ts</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):EncLoss</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HomeComplete</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AmpEna</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AmpFault</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>260</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):HomeComplete</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_11">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):HomeInProgress</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HomeInProgress</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_12">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>200</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):MinusLimit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>200</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MinusLimit</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_13">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>220</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):PlusLimit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>220</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PlusLimit</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_9">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>240</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FeWarn</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FeWarn</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>260</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SoftMinusLimit</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_14">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>260</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):SoftMinusLimit</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_15">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>280</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):SoftPlusLimit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>280</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SoftPlusLimit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>I2tFault</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_16">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>300</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):I2tFault</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_27">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>160</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>InPos</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_19">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>160</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):InPos</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_14">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AmpEna</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_15">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>180</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AmpFault</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_23">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>200</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):EncLoss</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_24">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>220</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FeFatal</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_25">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>240</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FeWarn</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_27">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>260</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):HomeComplete</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_28">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):I2tFault</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_29">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>160</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):InPos</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_30">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>180</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LimitStop</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_31">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>200</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):MinusLimit</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_33">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>220</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):PlusLimit</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_36">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>260</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):SoftMinusLimit</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_37">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>280</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):SoftPlusLimit</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_41">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>280</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):HomeInProgress</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_6">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):Td</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>decel, Td</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_55">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>130</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FeedTime</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_41">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Feedtime</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_34">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>240</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):ProgRunning</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_22">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>240</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>1</number>
+   </property>
+   <property name="onColour">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>125</red>
+     <green>125</green>
+     <blue>125</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):ProgRunning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>240</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ProgRunning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_43">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>30</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FRAxes</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>30</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):FRAxes</string>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>$(P)</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):Tm</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>mv time, Tm</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESubstitutedLabel</class>
+   <extends>QLabel</extends>
+   <header>QESubstitutedLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

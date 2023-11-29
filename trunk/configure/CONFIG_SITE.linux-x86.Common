@@ -1,0 +1,11 @@
+# $File: //ASP/tec/mc/ppmac/trunk/configure/CONFIG_SITE.linux-x86.Common $
+# $Revision: #1 $
+# $DateTime: 2019/08/22 16:16:42 $
+# Last checked in by: $Author: starritt $
+#
+
+SSH             = /usr
+SSH_LIB         = $(SSH)/lib
+SSH_INCLUDE     = -I$(SSH)/include
+
+# end

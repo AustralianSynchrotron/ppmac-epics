@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EFrame</class>
+ <widget class="QEFrame" name="EFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>666</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EFrame</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox">
+     <property name="title" stdset="0">
+      <string>Motor Control</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QEFrame" name="qeframe">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QEForm" name="qef_Drive">
+           <property name="uiFile" stdset="0">
+            <string>ppmac1motor_sl.ui</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="3" column="0">
+         <widget class="QFrame" name="fr_Velocity">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="_2">
+           <property name="leftMargin">
+            <number>6</number>
+           </property>
+           <property name="topMargin">
+            <number>6</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <property name="spacing">
+            <number>1</number>
+           </property>
+           <item row="2" column="11">
+            <widget class="QEComboBox" name="c_MotRecMODE">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).SPMG</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="subscribe">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QEComboBox::Scientist</enum>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLabel" name="label_37">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>8</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>le_VEL_2</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <widget class="QELabel" name="qelabel_25">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR):JogTa</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="precision">
+              <number>0</number>
+             </property>
+             <property name="useDbPrecision">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QELineEdit" name="le_VEL_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Desired velocity (value will be limited to VMAX)</string>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).VELO</string>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QEGenericEdit::Scientist</enum>
+             </property>
+             <property name="displayAlarmStateOption" stdset="0">
+              <enum>QEGenericEdit::WhenInvalid</enum>
+             </property>
+             <property name="addUnits">
+              <bool>true</bool>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QELineEdit" name="le_VEL_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Desired velocity (value will be limited to VMAX)</string>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).ACCL</string>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QEGenericEdit::Engineer</enum>
+             </property>
+             <property name="displayAlarmStateOption" stdset="0">
+              <enum>QEGenericEdit::WhenInvalid</enum>
+             </property>
+             <property name="addUnits">
+              <bool>true</bool>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="5">
+            <widget class="QELabel" name="qelabel_24">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR):JogTs</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="precision">
+              <number>0</number>
+             </property>
+             <property name="useDbPrecision">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="10">
+            <widget class="QEBitStatus" name="qebitstatus_17">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="numberOfBits">
+              <number>1</number>
+             </property>
+             <property name="shape">
+              <enum>QBitStatus::Circle</enum>
+             </property>
+             <property name="onColour">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>255</blue>
+              </color>
+             </property>
+             <property name="offColour">
+              <color>
+               <red>220</red>
+               <green>255</green>
+               <blue>223</blue>
+              </color>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).MOVN</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QELabel" name="lab_VMAX_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Applied velocity setpoint</string>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).VMAX</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="displayAlarmStateOption" stdset="0">
+              <enum>QELabel::WhenInvalid</enum>
+             </property>
+             <property name="addUnits">
+              <bool>true</bool>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QELabel" name="lab_VMAX_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Applied velocity setpoint</string>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).VELO</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="displayAlarmStateOption" stdset="0">
+              <enum>QELabel::WhenInvalid</enum>
+             </property>
+             <property name="addUnits">
+              <bool>true</bool>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Time to Vel.</string>
+             </property>
+             <property name="buddy">
+              <cstring>qcalineeditplugin_8</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="8">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="3" column="1">
+            <widget class="QELabel" name="qelabel">
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="text">
+              <string>Act. Vel.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QELabel" name="qelabel_2">
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="text">
+              <string>Max. Vel.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_36">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>8</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vel.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>le_VEL_2</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QELabel" name="qelabel_3">
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="text">
+              <string>Accel.Ta</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QELabel" name="qelabel_4">
+             <property name="visible" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelVisibility" stdset="0">
+              <enum>QELabel::User</enum>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QELabel::Engineer</enum>
+             </property>
+             <property name="text">
+              <string>S-curve Ts</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox_2">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="title" stdset="0">
+      <string>User Settings and controls</string>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QEGroupBox::Scientist</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="gb_UserCoord" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>6</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>1</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>  Offset: </string>
+           </property>
+           <property name="buddy">
+            <cstring>qcalineeditplugin_8</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QELineEdit" name="qcalineeditplugin_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="variable" stdset="0">
+            <string>$(MOTOR).OFF</string>
+           </property>
+           <property name="variableSubstitutions" stdset="0">
+            <string/>
+           </property>
+           <property name="userLevelEnabled" stdset="0">
+            <enum>QEGenericEdit::Scientist</enum>
+           </property>
+           <property name="displayAlarmStateOption" stdset="0">
+            <enum>QEGenericEdit::WhenInvalid</enum>
+           </property>
+           <property name="addUnits">
+            <bool>true</bool>
+           </property>
+           <property name="displayAlarmState" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QECheckBox" name="cB_SETOFFSET">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>8</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Check to set the offset to match current readback to desired setpoint </string>
+           </property>
+           <property name="text">
+            <string>SET[Use]</string>
+           </property>
+           <property name="variable" stdset="0">
+            <string>$(MOTOR).SET</string>
+           </property>
+           <property name="clickText">
+            <string>Use</string>
+           </property>
+           <property name="clickCheckedText">
+            <string>Set</string>
+           </property>
+           <property name="subscribe">
+            <bool>true</bool>
+           </property>
+           <property name="variableAsToolTip">
+            <bool>false</bool>
+           </property>
+           <property name="userLevelVisibility" stdset="0">
+            <enum>QECheckBox::User</enum>
+           </property>
+           <property name="userLevelEnabled" stdset="0">
+            <enum>QECheckBox::Scientist</enum>
+           </property>
+           <property name="displayAlarmStateOption" stdset="0">
+            <enum>QECheckBox::WhenInvalid</enum>
+           </property>
+           <property name="localEnumeration">
+            <string/>
+           </property>
+           <property name="displayAlarmState" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QERadioButton" name="qcaradiobuttonplugin_6">
+             <property name="minimumSize">
+              <size>
+               <width>40</width>
+               <height>12</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>User coordinate direction</string>
+             </property>
+             <property name="text">
+              <string>Pos</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).DIR</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="clickText">
+              <string>Pos</string>
+             </property>
+             <property name="creationOption" stdset="0">
+              <enum>QERadioButton::Open</enum>
+             </property>
+             <property name="clickCheckedText">
+              <string>Pos</string>
+             </property>
+             <property name="subscribe">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QERadioButton::Scientist</enum>
+             </property>
+             <property name="displayAlarmStateOption" stdset="0">
+              <enum>QERadioButton::WhenInvalid</enum>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QERadioButton" name="qcaradiobuttonplugin_5">
+             <property name="minimumSize">
+              <size>
+               <width>40</width>
+               <height>12</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>User coordinate direction</string>
+             </property>
+             <property name="text">
+              <string>Neg</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <property name="variable" stdset="0">
+              <string>$(MOTOR).DIR</string>
+             </property>
+             <property name="variableSubstitutions" stdset="0">
+              <string/>
+             </property>
+             <property name="clickText">
+              <string>Neg</string>
+             </property>
+             <property name="clickCheckedText">
+              <string>Neg</string>
+             </property>
+             <property name="subscribe">
+              <bool>true</bool>
+             </property>
+             <property name="userLevelEnabled" stdset="0">
+              <enum>QERadioButton::Scientist</enum>
+             </property>
+             <property name="displayAlarmStateOption" stdset="0">
+              <enum>QERadioButton::WhenInvalid</enum>
+             </property>
+             <property name="displayAlarmState" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEFrame" name="qeframe_2">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QEForm" name="qef_Drive_2">
+        <property name="uiFile" stdset="0">
+         <string>ppmac1motor_stats_n_faults.ui</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QEGroupBox" name="qegroupbox_4">
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="title" stdset="0">
+      <string>BaseConfig reference readback and homing</string>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QEGroupBox::Scientist</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <item row="2" column="3">
+       <widget class="QEPushButton" name="qcapushbuttonplugin_9">
+        <property name="text">
+         <string>Sync-Reset</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):RESET_DTR.PROC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="clickText">
+         <string>1</string>
+        </property>
+        <property name="confirmAction">
+         <bool>true</bool>
+        </property>
+        <property name="confirmText">
+         <string>Resets the diff. by syncing simulated readbacks to encoder readback. Motor is not expected to move.</string>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEPushButton::Scientist</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_45">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Position deviation from reference readback</string>
+        </property>
+        <property name="text">
+         <string>Diff.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QEPushButton" name="qcapushbuttonplugin_5">
+        <property name="text">
+         <string>Reset</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):DTRMAXRST.PROC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="clickText">
+         <string>1</string>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEPushButton::User</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_44">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Position deviation from reference readback</string>
+          </property>
+          <property name="text">
+           <string>Ref enc:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QELabel" name="qelabel_41">
+          <property name="variable" stdset="0">
+           <string>$(MOTOR):MotorRefEnc</string>
+          </property>
+          <property name="variableSubstitutions" stdset="0">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="2">
+       <widget class="QELabel" name="qelabel_19">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):DiffToRefPos</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QELabel::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="label_52">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Position deviation from reference readback</string>
+        </property>
+        <property name="text">
+         <string>Max Diff</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QELabel" name="qelabel_20">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):DTRMAX</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QELabel::Scientist</enum>
+        </property>
+        <property name="addUnits">
+         <bool>true</bool>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QELabel" name="qelabel_36">
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):MotorTemplate</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_43">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Position deviation from reference readback</string>
+          </property>
+          <property name="text">
+           <string>Main enc:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QELabel" name="qelabel_40">
+          <property name="variable" stdset="0">
+           <string>$(MOTOR):MotorMainEnc</string>
+          </property>
+          <property name="variableSubstitutions" stdset="0">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2">
+       <widget class="QELabel" name="qelabel_46">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):RefPos</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QELabel::Scientist</enum>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QELabel" name="qelabel_34">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):POSITION</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QELabel::Scientist</enum>
+        </property>
+        <property name="forceSign">
+         <bool>true</bool>
+        </property>
+        <property name="format" stdset="0">
+         <enum>QELabel::Floating</enum>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Fixed</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4" colspan="2">
+       <widget class="QLabel" name="label_53">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Position deviation from reference readback</string>
+        </property>
+        <property name="text">
+         <string>Config</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="6">
+       <widget class="QEPushButton" name="qcapushbuttonplugin_8">
+        <property name="text">
+         <string>Home via ppmac</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):HOME_NOW.PROC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="clickText">
+         <string>1</string>
+        </property>
+        <property name="confirmAction">
+         <bool>true</bool>
+        </property>
+        <property name="confirmText">
+         <string>Homing routine (may move axis to home reference and back) where no absolute encoder is available. If successful, motor will be phased and homed and diff. will be reset.</string>
+        </property>
+        <property name="userLevelEnabled" stdset="0">
+         <enum>QEPushButton::Scientist</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QEBitStatus" name="qebitstatus_19">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="numberOfBits">
+         <number>2</number>
+        </property>
+        <property name="shift">
+         <number>0</number>
+        </property>
+        <property name="shape">
+         <enum>QBitStatus::Rectangle</enum>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>220</red>
+          <green>255</green>
+          <blue>223</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):HomingInQueue</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QEBitStatus" name="qebitstatus_18">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>0</number>
+        </property>
+        <property name="shape">
+         <enum>QBitStatus::Circle</enum>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>220</red>
+          <green>255</green>
+          <blue>223</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(MOTOR):PmacMotorBusy</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+        <property name="displayAlarmState" stdset="0">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QECheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>QECheckBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QERadioButton</class>
+   <extends>QRadioButton</extends>
+   <header>QERadioButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QEGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>QEGroupBox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

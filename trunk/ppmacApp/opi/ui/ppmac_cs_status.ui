@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>229</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="9" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Move Time</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="2">
+    <widget class="VCLNavigatePushButton" name="vclnavigatepushbutton">
+     <property name="font">
+      <font>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string>Raw Status...</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(PMAC):CS$(CS)</string>
+     </property>
+     <property name="guiFile" stdset="0">
+      <string>ppmac_cs_raw_status.ui</string>
+     </property>
+     <property name="creationOption" stdset="0">
+      <enum>QEPushButton::NewWindow</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>Fault</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QECheckBox" name="qecheckbox">
+     <property name="text">
+      <string>Defer Moves</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):DeferMoves</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="5">
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel">
+     <property name="text">
+      <string>$(PMAC):CS$(CS)</string>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(PMAC):CS$(CS)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QELineEdit" name="qelineedit_4">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):CsMoveTime</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>MinusLimit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QEBitStatus" name="qebitstatus_5">
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="numberOfBits">
+      <number>1</number>
+     </property>
+     <property name="onColour">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="offColour">
+      <color>
+       <red>125</red>
+       <green>255</green>
+       <blue>125</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):FAULT</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>PlusLimit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QEBitStatus" name="qebitstatus">
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="numberOfBits">
+      <number>1</number>
+     </property>
+     <property name="onColour">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="offColour">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):PlusLimit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>ProgRunning</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QEBitStatus" name="qebitstatus_2">
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="numberOfBits">
+      <number>1</number>
+     </property>
+     <property name="onColour">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="offColour">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):MinusLimit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QEBitStatus" name="qebitstatus_4">
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="numberOfBits">
+      <number>1</number>
+     </property>
+     <property name="onColour">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="offColour">
+      <color>
+       <red>125</red>
+       <green>255</green>
+       <blue>125</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):ProgRunning</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>InPos</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QEBitStatus" name="qebitstatus_3">
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="numberOfBits">
+      <number>1</number>
+     </property>
+     <property name="onColour">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="offColour">
+      <color alpha="125">
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):InPos</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QELabel" name="qelabel_3">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):CsMoveTime_RBV</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="3">
+    <widget class="QEPushButton" name="qepushbutton_3">
+     <property name="text">
+      <string>Abort (hold to abort retries)</string>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>100</number>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(PMAC):CS$(CS):Abort</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QECheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>QECheckBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESubstitutedLabel</class>
+   <extends>QLabel</extends>
+   <header>QESubstitutedLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLNavigatePushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLNavigatePushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
